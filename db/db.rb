@@ -2,7 +2,7 @@ DB = Sequel.connect(
   adapter: :postgres,
   database: 'sinatra_seq_dev',
   host: 'localhost',
-  password: 'postgres',
+  password: '123456',
   user: 'postgres',
   max_connections: 10,
 

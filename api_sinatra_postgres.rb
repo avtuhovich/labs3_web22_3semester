@@ -4,5 +4,8 @@ require  'pg'
 require 'json'
 require 'multi_json'
 require 'sinatra'
+require 'sinatra/namespace'
 
-%w{ controllers models routes }.each { |dir| Dir.glob("./#{ dir }/*.rb", &method(:require)) }
+
+
+%w{ db controllers models routes }.each { |dir| Dir.glob("./#{ dir }/*.rb", &method(:require)) }
